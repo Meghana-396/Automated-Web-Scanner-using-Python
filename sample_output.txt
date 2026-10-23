@@ -1,0 +1,23 @@
+Example output format (illustrative only; not a live scan)
+
+Scanning: https://example.com
+------------------------------------------------------------
+HTTP status: 200
+Final URL: https://example.com/
+
+Security header checks:
+[MISSING] Content-Security-Policy — Helps reduce some cross-site scripting risks.
+[MISSING] Strict-Transport-Security — Tells browsers to prefer HTTPS for future visits.
+[PRESENT] X-Content-Type-Options: nosniff
+[MISSING] X-Frame-Options — Helps control whether the page can be framed.
+[PRESENT] Referrer-Policy: no-referrer
+[MISSING] Permissions-Policy — Controls access to selected browser features.
+
+CORS observation:
+[INFO] No Access-Control-Allow-Origin header was returned.
+
+Summary:
+Security headers present: 2/6
+Headers to review: Content-Security-Policy, Strict-Transport-Security, X-Frame-Options, Permissions-Policy
+
+Note: This output is an example for formatting only, not a real test result.
